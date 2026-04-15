@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Funds | SL Money Exchange</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">🇸🇱</span>
+            <span class="logo-text">SL-Exchange</span>
+        </a>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exchange.html" class="active">Exchange</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="exchange.html" class="nav-btn">Get Started</a>
+    </nav>
+
+    <!-- PAGE BANNER -->
+    <div class="page-banner">
+        <h1>Exchange <span class="orange-text">Funds</span></h1>
+        <p>Convert your mobile money across all Sierra Leonean networks instantly.</p>
+    </div>
+
+    <!-- EXCHANGE CONTAINER -->
+    <section class="exchange-container">
+        <div class="info-side">
+            <div class="info-card">
+                <h3>Live Exchange Rates</h3>
+                <table class="rate-table">
+                    <tr><td>Orange ➔ Afri Money</td><td>0.98 SLE</td></tr>
+                    <tr><td>Orange ➔ QMoney</td><td>0.97 SLE</td></tr>
+                    <tr><td>Afri Money ➔ Orange</td><td>0.98 SLE</td></tr>
+                    <tr><td>Afri Money ➔ QMoney</td><td>0.97 SLE</td></tr>
+                    <tr><td>QMoney ➔ Orange</td><td>0.98 SLE</td></tr>
+                    <tr><td>QMoney ➔ Afri Money</td><td>0.98 SLE</td></tr>
+                </table>
+                <div style="margin-top: 25px; font-size: 0.9rem; color: #444;">
+                    <p><strong>Min Transfer:</strong> 10 SLE</p>
+                    <p><strong>Max Transfer:</strong> 10,000 SLE</p>
+                    <p><strong>Processing:</strong> Instant (24/7 )</p>
+                </div>
+            </div>
+            <div class="info-card" style="margin-top: 30px;">
+                <h3>Need Help?</h3>
+                <p style="font-size: 0.9rem; color: #666;">If you have any issues with your exchange, please contact our support team immediately.</p>
+                <a href="contact.html" style="color: var(--orange-color); font-weight: 600; text-decoration: none; display: inline-block; margin-top: 10px;">Contact Support ➔</a>
+            </div>
+        </div>
+
+        <div class="form-side">
+            <div class="exchange-form-card">
+                <h3>Swap Your Money</h3>
+                <form action="#">
+                    <div class="form-group">
+                        <label>Send From</label>
+                        <select required>
+                            <option value="">Select Source Network</option>
+                            <option value="orange">Orange Money</option>
+                            <option value="afri">Afri Money</option>
+                            <option value="qmoney">QMoney</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Send To</label>
+                        <select required>
+                            <option value="">Select Target Network</option>
+                            <option value="orange">Orange Money</option>
+                            <option value="afri">Afri Money</option>
+                            <option value="qmoney">QMoney</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Amount to Exchange (SLE)</label>
+                        <input type="number" placeholder="Enter amount in Leones" min="10" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Your Phone Number (Source)</label>
+                        <input type="tel" placeholder="+232 XXX XXXXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Recipient Phone Number (Target)</label>
+                        <input type="tel" placeholder="+232 XXX XXXXXX" required>
+                    </div>
+                    
+                    <div class="receive-box">
+                        <span>You will receive approx:</span>
+                        <span style="color: var(--afri-color);">0.00 SLE</span>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Process Exchange Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <h4>SL-Exchange</h4>
+                <p style="color: #aaa; font-size: 0.9rem;">The leading mobile money exchange platform in Sierra Leone. We make digital currency accessible for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="exchange.html">Exchange Funds</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Follow Us</h4>
+                <div style="display: flex; gap: 15px; font-size: 1.5rem;">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SL Money Exchange. All Rights Reserved. Licensed by Bank of Sierra Leone.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

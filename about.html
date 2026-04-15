@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | SL Money Exchange</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Extra styles for About page */
+        .about-section { padding: 80px 10%; }
+        .about-content { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; margin-bottom: 80px; }
+        .about-image img { width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1 ); }
+        .mission-vision { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 80px; }
+        .mv-card { background: #f9f9f9; padding: 40px; border-radius: 15px; border-top: 5px solid var(--orange-color); }
+        .team-section { text-align: center; }
+        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 50px; }
+        .team-card { background: var(--white); padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); transition: 0.3s; }
+        .team-card:hover { transform: translateY(-10px); }
+        .team-img { width: 120px; height: 120px; background: #eee; border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: #ccc; }
+        .team-card h3 { margin-bottom: 5px; }
+        .team-card p { color: var(--orange-color); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px; }
+        .team-social { display: flex; justify-content: center; gap: 15px; color: var(--gray); }
+        
+        @media (max-width: 992px) {
+            .about-content, .mission-vision { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">🇸🇱</span>
+            <span class="logo-text">SL-Exchange</span>
+        </a>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exchange.html">Exchange</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="exchange.html" class="nav-btn">Get Started</a>
+    </nav>
+
+    <!-- PAGE BANNER -->
+    <div class="page-banner">
+        <h1>About <span class="orange-text">Our Company</span></h1>
+        <p>Leading the digital financial revolution in Sierra Leone.</p>
+    </div>
+
+    <!-- ABOUT CONTENT -->
+    <section class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Who We <span class="orange-text">Are</span></h2>
+                <p style="margin-bottom: 20px;">Founded in 2022, <strong>SL Money Exchange</strong> was born out of a simple need: to make mobile money transfers between different networks in Sierra Leone seamless, fast, and affordable. We recognized the challenges people faced when trying to move funds between Orange, Afri, and QMoney, and we built a solution to bridge that gap.</p>
+                <p>Today, we are proud to be the most trusted independent mobile money hub in the country, serving thousands of Sierra Leoneans daily. Our platform is built on a foundation of transparency, security, and customer-first service.</p>
+            </div>
+            <div class="about-image">
+                <div style="width: 100%; height: 350px; background: #f0f0f0; border-radius: 15px; display: flex; align-items: center; justify-content: center; color: #ccc; font-size: 1.2rem;">
+                    <i class="fa-solid fa-building" style="font-size: 5rem; margin-bottom: 20px; display: block;"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- MISSION & VISION -->
+        <div class="mission-vision">
+            <div class="mv-card">
+                <h3><i class="fa-solid fa-bullseye" style="color: var(--orange-color); margin-right: 10px;"></i> Our Mission</h3>
+                <p>To empower every Sierra Leonean with the ability to move their digital funds freely across all networks, fostering financial inclusion and economic growth through innovative technology.</p>
+            </div>
+            <div class="mv-card">
+                <h3><i class="fa-solid fa-eye" style="color: var(--orange-color); margin-right: 10px;"></i> Our Vision</h3>
+                <p>To become the leading digital financial ecosystem in West Africa, where mobile money is as fluid and accessible as physical cash, regardless of the service provider.</p>
+            </div>
+        </div>
+
+        <!-- TEAM SECTION -->
+        <div class="team-section">
+            <h2 style="font-size: 2.5rem;">Meet Our <span class="orange-text">Team</span></h2>
+            <p style="color: var(--gray); max-width: 700px; margin: 10px auto 0;">Our team is composed of passionate Sierra Leoneans dedicated to building a better financial future for our country.</p>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-img"><i class="fa-solid fa-user-tie"></i></div>
+                    <h3>Michael H. Coker</h3>
+                    <p>Founder & CEO</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-img"><i class="fa-solid fa-user-gear"></i></div>
+                    <h3>Alhaji Alpha Sankoh</h3>
+                    <p>Head of Operations</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                  <img src="1o2.jpg" alt="Team Member" style="width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 20px;"/>
+                    <h3>Fillo</h3>
+                    <p>Security Specialist</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-img"><i class="fa-solid fa-headset"></i></div>
+                    <h3>Bolly</h3>
+                    <p>Customer Success Lead</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <h4>SL-Exchange</h4>
+                <p style="color: #aaa; font-size: 0.9rem;">The leading mobile money exchange platform in Sierra Leone. We make digital currency accessible for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="exchange.html">Exchange Funds</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Follow Us</h4>
+                <div style="display: flex; gap: 15px; font-size: 1.5rem;">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SL Money Exchange. All Rights Reserved. Licensed by Bank of Sierra Leone.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
