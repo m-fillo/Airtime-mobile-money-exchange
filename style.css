@@ -281,3 +281,16 @@ body {
     .menu { display: none; }
     .footer-content { grid-template-columns: 1fr; }
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
